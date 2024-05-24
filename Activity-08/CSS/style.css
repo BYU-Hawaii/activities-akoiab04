@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    }
+
+li {
+    display: inline;
+    margin: 0 15px:
+}
+
+a:hover {
+    text-decoration: none;
+    padding: 5%;
+    }
