@@ -1,7 +1,33 @@
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    }
+
+li {
+    display: inline;
+    margin-right: 20px;
+    }
+    a{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    }
+a:hover{
+    background-color: gold;
+}
 .Flex_box 
     {display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    }
+.Column {flex: 1;
+        padding: 20px;
+        border: 1px solidcolor;
+        align-items: center;}
+h1 {text-align: center;}
+h3 {text-align: center;}
+.image{float:left;
+    padding: 5px;
     }
