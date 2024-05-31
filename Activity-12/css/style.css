@@ -15,7 +15,7 @@
     grid-area: sidebar;
     background-color:gray;
 }
-.content{
+.main{
     grid-area: content;
 }
 
