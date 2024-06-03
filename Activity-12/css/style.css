@@ -50,14 +50,5 @@ footer{
     grid-column: 2/4;
 }
 
-/* @media (min-width: 768px) {
-   .grid-container-body {
-    display: grid ;
-    grid-template-areas: 
-    "header header header"
-    "sidebar content content"
-    "footer footer foooter";
-    gap: 10px;
-    padding: 20px; */
-    
+
       
