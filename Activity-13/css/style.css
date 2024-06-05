@@ -1,4 +1,12 @@
-
+body {
+    background-color: lightblue;
+    font-size: 18px;
+    line-height: 1.6;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+}
 ul{
     list-style: none;
     margin: 0;
@@ -32,24 +40,26 @@ h3{
     width: 100%;
 }
 
-@media (min-width: 700px){
+@media (min-width: 600px){
     body {
-        background-color: lightblue;
-        font-size:  18px;
+        background-color: tan;
+        font-size:  20px;
         line-height: 1.6;
         gap: 10px;
     }
+    button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
     li{ float: left;}
     }
+@media (min-width: 1024px){
+    body{
+        background-color: olivedrab;
+        font: 22px;}
+    button {
+        padding: 20px 40px;
+        font-size: 24px;
+    }
+}
 
-
-/* @media (min-width: 768px) {
-   .grid-container-body {
-    display: grid ;
-    grid-template-areas: 
-    "header header header"
-    "sidebar content content"
-    "footer footer foooter";
-    gap: 10px;
-    padding: 20px; */
-    
