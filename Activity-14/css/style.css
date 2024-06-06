@@ -1,60 +1,78 @@
-body {
-    background-color:whitesmoke;
+.header {
+    grid-area: header;
+    background-color:beige;
+    text-align: center;
 }
-.menu {
+.navigation{
+    grid-area: navigation;
+    background-color: beige;
+}
+.navigation ul {
     list-style-type: none;
     padding: 0;
 }
-.menu li {
+.navigation li {
     padding: 10px 0;
 }
-.menu a {
+.navigation a {
     text-decoration: none;
     color: tan;
     padding: 10px 15px;
     display: block;
 }
-.menu a:hover{
+.navigation a:hover{
     background-color:beige;
 }
 
 .main {
     grid-area: main;
     padding: 1rem;
+    gap: 10px;
+    background-color: beige;
 }
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
-.gallery{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.gallery img{
+    margin-top: 8px;
+    vertical-align: middle;
 }
 .footer{
     grid-area: footer;
-    background-color: beige;
+    background-color:beige;
     color:tan;
     text-align: center;
     padding: 1rem;
+    margin: 10px;
 }
-@media (min-width: 768px) {
-    .menu li {
+
+@media (min-width: 769px) {
+    .grid-container {
+    grid-template-areas: "header"
+    "navigation"
+    "main"
+    "footer";
+    }
+    .navigation li {
         display: inline-block;
     }
 
-    .menu li:not(:last-child){
+    .navigation li:not(:last-child){
         margin-right: 20px;
     }
+    .gallery{
+        flex: 50%;
+        max-width: 50%;
+    }
 }
-
-@media (min-width: 768px) 
-    {.grid-container {
-    grid-template-areas: 
-    "nav"
-    "header"
-    "main"
-    "footer";
+@media (min-width: 1025px){
+    .grid-container{
+        grid-template-areas: "header"
+        "navigation"
+        "main"
+        "footer";
+        
     }
 }
