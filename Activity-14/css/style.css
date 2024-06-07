@@ -71,7 +71,7 @@
     .grid-container{
         grid-template-areas: "header"
         "navigation"
-        "main"
+        "section"
         "footer";
         
     }
