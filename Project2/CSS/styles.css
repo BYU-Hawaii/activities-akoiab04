@@ -73,6 +73,7 @@ footer {
     img{ 
         display: inline-block;
         width: 100%;
+        padding: 10px;
     }
     section {
         width: 50%;
@@ -91,7 +92,7 @@ footer {
     nav a{
         display: inline;
         padding: 5px;
-        text-decoration: no;
+        text-decoration: none;
     }
     section{
         width: 50%;
