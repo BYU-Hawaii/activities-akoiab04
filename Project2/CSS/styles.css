@@ -81,7 +81,7 @@ footer {
     }
 }
 
-@media (min-width:700px) {
+@media (min-width:1024px) {
     body{
         flex-direction: row;
         justify-content: space-between;
