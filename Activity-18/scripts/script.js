@@ -1,13 +1,13 @@
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting the traditional way
     var name =document.getElementById('name').value;
-    var phone=document.getElementById('phone').value;
+    var phone =document.getElementById('phone').value;
     var username = document.getElementById('username').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     
     var nameValid = /^[a-zA-Z]{3,}$/.test(name);
-    var phoneValid = /^[0-9]{3,}$/.test(phone);
+    var phoneValid = /^\+?\d{1,3}\s*\(\d{3}\)\s*\d{1,10}$/.test(phone);
     var usernameValid = /^[a-zA-Z0-9]{5,}$/.test(username); // Username should be at least 5 characters long and contain only letters and numbers
     var emailValid = /^[^@]+@\w+(\.\w+)+\w$/.test(email); // Simple email pattern check
     var passwordValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(password); // Password should be at least 8 characters long, contain numbers and both lowercase and uppercase letters
@@ -25,7 +25,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     document.getElementById('passwordFeedback').textContent = passwordValid ? '' : 'Password should be at least 8 characters long, contain numbers and both lowercase and uppercase letters.';
 
     var formValid =nameValid && phoneValid && usernameValid && emailValid && passwordValid;
-
+    
     if (formValid) {
         document.getElementById('registrationFeedback').textContent = 'Your user registration was accepted!';
         document.getElementById('registrationFeedback').style.display = 'block';

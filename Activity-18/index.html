@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1> Registration Form </h1>
+    </header>
+    <section class="container">
     <form id="registrationForm">
+        <h2> Fill up the Form</h2>
         <label for="name">Name:</label>
-        <input type="name" id="name" name="name" required>
+        <input type="text" id="name" name="name" required>
         <div class="feedback" id="nameFeedback"></div>
 
-        <label for="phone">Phone:</label>
-        <input type="phone" id="phone" name="phone" required>
+        <label for="phone">Phone:(+1(123)456789)</label>
+        <input type="tel" id="phone" name="phone" required>
         <div class="feedback" id="phoneFeedback"></div>
 
         <label for="username">Username:</label>
@@ -33,5 +38,6 @@
     </form>
 
     <script src="scripts/script.js"></script>
+</section> 
 </body>
 </html>
