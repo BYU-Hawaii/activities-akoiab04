@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback Form/</h1>
+    </header>
+        <nav>
+            <ul>
+                <a href="index.html"> Home</a>
+                <a href="aboutpage.html"> About Page</a>
+                <a href="game.html"> Game</a>
+                <a href="form.html"> Rating Form </a>
+            </ul>
+        </nav>
+        <section class="container">
+            <form action="process_feedback.php" method="post">
+                <h2> Rate Here </h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+           
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Submit Rate</button>
+                <div class="feedback valid-feedback" id="ratingsFeedback"></div>
+            </form>
+
+             <script src="scripts/script.js"></script>
+         </section> 
+</body>
+</html>
