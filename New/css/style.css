@@ -1,0 +1,26 @@
+header{
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+.tile {
+    display:inline-block;
+    font-size: 24px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

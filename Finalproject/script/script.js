@@ -31,3 +31,4 @@ document.getElementById('ratingForm').addEventListener('submit', function(event)
         document.getElementById('ratingsFeedback').style.display = 'none';
     }
 });
+
