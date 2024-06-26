@@ -4,10 +4,10 @@ const numTiles = numRows * numCols;
 let tiles = [];
 
 // Initialize tiles with numbers 1 to 8 and a blank space
-for (let i = 1; i <= numTiles - 1; i++) { // Adjusted loop condition
+for (let i = 1; i <= numTiles - 1; i++) {
     tiles.push(i);
 }
-tiles.push(null);  // Representing the empty space
+tiles.push(null); // Representing the empty space
 
 function shuffleTiles() {
     for (let i = tiles.length - 1; i > 0; i--) {
@@ -61,9 +61,17 @@ function moveTile(index) {
 function checkWin() {
     const solution = [...tiles].sort((a, b) => a - b);
     if (JSON.stringify(tiles) === JSON.stringify(solution)) {
-        alert('Congratulations! You solved the puzzle.');
+        congratulatePlayer(); // Call function to congratulate player
     }
 }
+
+function congratulatePlayer() {
+    const section = document.querySelector('section');
+    const congratsMessage = document.createElement('p');
+    congratsMessage.textContent = 'Congratulations! You solved the puzzle.';
+    section.appendChild(congratsMessage);
+}
+
 document.getElementById('ratingForm').addEventListener('submit', function(event) {
     event.preventDefault();
     var name = document.getElementById('name').value;
