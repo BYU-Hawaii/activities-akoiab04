@@ -22,7 +22,11 @@ body {
 nav {
     text-align: center;
 }
-
+nav a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
 img {
     display: flex;
     margin-left: auto;
@@ -33,13 +37,10 @@ img {
 
 section {
     background-color: whitesmoke;
-    width: 700px;
+    width: 500px;
     border: 15px black;
     padding: 50px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
 }
 
 ul {
@@ -52,25 +53,46 @@ footer {
     text-transform: capitalize;
 }
 
-@media (min-width:400px) {
+@media (min-width:768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    header {
+        display:inline;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    nav {
+      text-align: center;}
+    nav a {
+        display:block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    img{ 
+        display: block;
+        width: 100%;
+        padding: 10px;
+        }}
+@media (min-width:1024px) {
     body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-attachment: scroll;
     }
     header {
-        display:block;
+        display:inline;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
     nav {
       text-align: center;
-
     }
     nav a {
-        display: block;
+        display:inline;
         padding: 10px;
         text-decoration: none;
     }
@@ -79,27 +101,4 @@ footer {
         width: 100%;
         padding: 10px;
     }
-    section {
-        width: 50%;
-       
-    }
 }
-
-@media (min-width:1024px) {
-    body{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    nav {
-        text-align: center;
-    }
-    nav a{
-        display: inline;
-        padding: 5px;
-        text-decoration: none;
-    }
-    section{
-        width: 50%;
-    }
-}
-    
